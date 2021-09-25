@@ -27,7 +27,7 @@ end
 
 group :test do
   gem 'simplecov'
-  # gem 'shoulda-matchers'
+  gem 'shoulda-matchers'
   # gem 'webmock'
 end
 
