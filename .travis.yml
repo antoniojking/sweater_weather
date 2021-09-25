@@ -8,13 +8,8 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
-  api_key:
-    secure: iPK5WIdGY2fHA2HrgS4j3jGSAhkkQpAuYPwWn18UnPY9R5qifUYPijrqls9mxWSdSGguso8XqTBX3yWdTGqLK42YJ4s11q+/tCwo4H/M5ZPfUm7wH9gqEEPcWXrv28t5KkVlZRN2AG1kvMmRNe20rgM9pCTmv0FBpx4fY3fPvpB965vSWfxQf4ihBBh06unvoQy3xoSVV7pIoKaG3AFZKpzSc+j/QknDPEedBAXMrbXdvCRIytcgPO1LeGRQ/d4rypgQ/SBvIzVYC3hDUp4WX/MAzYX/PXOFCdIK7rcqpTupf0YnTts7XmLjoGFi0DdE0RxUtznlJMrmnmWyGf4vUKS7GPO0hqiWqqLctHiyrEh6eZk9MMPJDLBspSYmPaWXclfWdxVUpCH98Qlq+UhkgaQaSYeMmVHKYyD/PzXzZVhVVqwCo1rdxZQmg5zUll3R5h+5htU3LGvVpKYlKPDFEgrVvDBq/RVy+A3t/fSEKUCnZUnPaT/1tnoPb6W7liQv1wZiP3+/FiBGhEbiG8lnGyaHRHowEP7y4Mb3rZd0XMAT24t6yXelo/4uOW8czsiIp076Q8g0n85UgOM6S5jNwpxD2iZzKB5XzYq20J1CmyatAz8qxTcHLZoaHwfaXhgG+LUfQm4orNYa5d8FN5cBDc8pcQAY0XA5AZ3sNdOXUFU=
+  api_key: 59f47a59-06ec-4084-9f9c-04ab195cf41f
   app: sweater-weather-2105be
   on:
     repo: antoniojking/sweater_weather
     branch: main
-env:
-before_install:
-- yes | gem update --system --force
-- gem install bundler
