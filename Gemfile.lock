@@ -42,6 +42,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     arel (9.0.0)
     ast (2.4.2)
     bootsnap (1.9.1)
@@ -72,11 +74,26 @@ GEM
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
+    faraday_middleware (1.1.0)
+      faraday (~> 1.0)
     ffi (1.15.4)
+    gh (0.18.0)
+      activesupport (~> 5.0)
+      addressable (~> 2.4)
+      faraday (~> 1.0)
+      faraday_middleware (~> 1.0)
+      multi_json (~> 1.0)
+      net-http-persistent (~> 2.9)
+      net-http-pipeline
     globalid (0.5.2)
       activesupport (>= 5.0)
+    highline (2.0.3)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    json (2.5.1)
+    json_pure (2.5.1)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -89,11 +106,20 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.1)
+    mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
+    multi_json (1.15.0)
     multipart-post (2.1.1)
+    net-http-persistent (2.9.4)
+    net-http-pipeline (1.0.1)
     nio4r (2.5.8)
+    nokogiri (1.12.4)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     nokogiri (1.12.4-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.12.4-x86_64-linux)
       racc (~> 1.4)
     parallel (1.21.0)
     parser (3.0.2.0)
@@ -102,7 +128,11 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    public_suffix (4.0.6)
     puma (3.12.6)
+    pusher-client (0.6.2)
+      json
+      websocket (~> 1.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -190,15 +220,26 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.1.0)
     thread_safe (0.3.6)
+    travis (1.10.0)
+      faraday (~> 1.0)
+      faraday_middleware (~> 1.0)
+      gh (~> 0.13)
+      highline (~> 2.0)
+      json_pure (~> 2.3)
+      launchy (~> 2.1, < 2.5.0)
+      pusher-client (~> 0.4)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
     unicode-display_width (2.1.0)
+    websocket (1.2.9)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
 
 PLATFORMS
+  ruby
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -212,10 +253,11 @@ DEPENDENCIES
   rubocop-rails
   shoulda-matchers
   simplecov
+  travis
   tzinfo-data
 
 RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.27
+   2.2.28

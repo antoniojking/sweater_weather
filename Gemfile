@@ -18,7 +18,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'rubocop-rails'
-  # gem 'travis'
+  gem 'travis'
 end
 
 group :development do
