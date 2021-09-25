@@ -116,7 +116,7 @@ RSpec.describe 'Forecast API' do
   end
 
   describe 'sad path' do
-    it 'will not return forecast without location params', :vcr do
+    it 'will not return forecast without location params' do
       get '/api/v1/forecast/'
 
       expect(response.status).to eq(400)
@@ -127,7 +127,7 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    it 'will not return forecast with blank location', :vcr do
+    it 'will not return forecast with blank location' do
       get '/api/v1/forecast', params: { location: ''}
 
       expect(response.status).to eq(400)
@@ -138,7 +138,7 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    it 'will render an error message when location is invalid or does not exist', :vcr do
+    it 'will render an error message when location is invalid or does not exist' do
       get '/api/v1/forecast', params: { location: 'dinver,co'}
 
       expect(response.status).to eq(400)
