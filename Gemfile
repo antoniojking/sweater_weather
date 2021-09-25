@@ -17,7 +17,7 @@ gem 'faraday'
 group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
-  # gem 'rubocop-rails'
+  gem 'rubocop-rails'
   # gem 'travis'
 end
 
@@ -26,7 +26,7 @@ group :development do
 end
 
 group :test do
-  # gem 'simplecov'
+  gem 'simplecov'
   # gem 'shoulda-matchers'
   # gem 'webmock'
 end
