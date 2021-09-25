@@ -1,0 +1,18 @@
+
+language: ruby
+rbenv:
+- 2.7.2
+addons:
+  postgresql: 9.6
+script:
+- bundle exec rails db:create RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: lhFNi/dxbv0eYKLjAAy5JCxeFex+v/ZONFS50oTj/esRWnA883dudzKF0+ELjCMDWeqIYxrEfoBytG8NroWoDC6/VEYWkfzZsL3QOVMV/OsL2fkp2LprYbma3OOu80Po1rK+Mt8PrJ6Wz5ntVypBhxOZnvnPPOhijSpTMzH9WMJ/GOGuGT2VozWn9MPWW0uUAOAl2biGNPIUuAhb5usMo7mDRmzO4r47GpCpm6cYMCZaWfeuHSnK/NBHa0988V0Iyo+NFycOcvdy8LbtXuVVajYMaFxuOz0Eim7R24/ezXxXWXiEz8CZgAgbmYs358cRhI6cs71A0Y8VJp6suMEEHcDIxZhJ6SHcib4V1e/IdvYIqmb3TD9U6zMqAZdmo8yg+xphLwF1Rj3/hEnrECOoOerfAr9hy9hCDRtZkTvlsoXKI+tNceKC9BdYN/emC1xttwsXP6lzHZXThWYm07jQzAf3YNTMgJt469YlEH/I43WWoVWgxFiYrgOz7O68fOrXHNgTOj5Nkjg1QaLeqzfBlwIu9ngyEvJ8vZDxu/uGO6xDKU7otKLcWY13GZvnehVcIj2H2uGMRgxkY/gd/IsK/LGa+avDDHcWynqVWZgbPD8YU6p/G3Loztd5mz2318Lm2zkQAT9afk8NkCsxgvNCICYksQezY7P5+3nko+Dc/+0=
+  app: sweater-weather-2105be
+  run: rails db:migrate
+  on:
+    repo: antoniojking/sweater_weather
+    branch: main
