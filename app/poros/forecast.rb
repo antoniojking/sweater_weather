@@ -3,9 +3,9 @@ class Forecast
               :hourly_weather,
               :daily_weather
 
-  def initialize(attributes)
-    @current_weather = CurrentWeather.new(attributes[:current_weather])
-    @hourly_weather  = attributes[:hourly].map { |hour| HourlyWeather.new(hour) }
-    @daily_weather   = attributes[:daily].map { |day| DailyWeather.new(day) }
+  def initialize(current, hourly, daily)
+    @current_weather = CurrentWeather.new(current)
+    @hourly_weather  = hourly.map { |hour| HourlyWeather.new(hour) }
+    @daily_weather   = daily.map { |day| DailyWeather.new(day) }
   end
 end
