@@ -10,6 +10,7 @@ RSpec.describe Forecast do
     forecast = Forecast.new(current, hourly, daily)
 
     expect(forecast).to be_a(Forecast)
+    expect(forecast.id).to eq('null')
     expect(forecast.current_weather).to be_a(CurrentWeather)
 
     expect(forecast.daily_weather).to be_an(Array)
