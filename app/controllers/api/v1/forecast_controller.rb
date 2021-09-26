@@ -1,15 +1,8 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    location = MapquestFacade.coordinates_by_city_state(params[:location])
-    forecast = WeatherFacade.forecast_by_coordinates(location)
+    forecast = WeatherFacade.forecast_by_city_state(params[:location])
+
     render(json: ForecastSerializer.new(forecast))
-
-    #use forecast object in serializer
-    #render serializer in controller
-    #review sad and edge path testing
-
-    # forecast = ForecastFacade.create_weather(params[:city], params[:state])
-    # render(json: ForecastSerializer.new(forecast))
   end
 
   # def index
