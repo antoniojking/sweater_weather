@@ -7,6 +7,31 @@ class Api::V1::ForecastController < ApplicationController
       req.params['location'] = params[:location]
     end
 
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    coordinates = json[:results][0][:locations][0][:latLng]
+
+    lat = coordinates[:lat]
+    lon = coordinates[:lng]
+
+    conn = Faraday.new(url: 'https://api.openweathermap.org/data/2.5/')
+
+    response = conn.get('onecall') do |req|
+      req.params['appid'] = ENV['open_weather_api_key']
+      req.params['lat'] = lat
+      req.params['lon'] = lon
+      req.params['exclude'] = 'minutely'
+    end
+
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    current = json[:current]
+    daily = json[:daily][0..4]
+    hourly = json[:hourly][0..7]
+
+    @forecast = json
+    render(json: ForecastSerializer.new(@forecast))
+
     # forecast = ForecastFacade.create_weather(params[:city], params[:state])
     # render(json: ForecastSerializer.new(forecast))
   end
