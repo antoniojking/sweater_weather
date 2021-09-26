@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Forecast API' do
   describe 'happy path' do
-    it 'returns forecast when given location params (city,state)' do
+    it 'returns forecast when given location params (city,state)', :vcr do
       get '/api/v1/forecast', params: {location: 'denver,co'}
 
       expect(response.status).to eq(200)

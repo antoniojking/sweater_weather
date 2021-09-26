@@ -1,25 +1,13 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    conn = Faraday.new(url: 'http://www.mapquestapi.com/geocoding/v1/')
-
-    response = conn.get('address') do |req|
-      req.params['key'] = ENV['mapquest_api_key']
-      req.params['location'] = params[:location]
-    end
-
-    json = JSON.parse(response.body, symbolize_names: true)
-
-    coordinates = json[:results][0][:locations][0][:latLng]
-
-    lat = coordinates[:lat]
-    lon = coordinates[:lng]
+    location = MapquestFacade.coordinates_by_city_state(params[:location])
 
     conn = Faraday.new(url: 'https://api.openweathermap.org/data/2.5/')
 
     response = conn.get('onecall') do |req|
       req.params['appid'] = ENV['open_weather_api_key']
-      req.params['lat'] = lat
-      req.params['lon'] = lon
+      req.params['lat'] = location.latitude
+      req.params['lon'] = location.longitude
       req.params['exclude'] = 'minutely'
     end
 
