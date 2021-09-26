@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Sun, 26 Sep 2021 22:45:51 GMT
+      - Sun, 26 Sep 2021 22:55:02 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1734'
+      - '1735'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Sun, 26 Sep 2021 22:45:51 GMT
+      - Sun, 26 Sep 2021 22:55:02 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=4DF2A728619DE16EA0F8DC22C86B0A19; Path=/; HttpOnly
+      - JSESSIONID=E776DD93ED69CB92546DD21276A944EE; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,12 +51,12 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1108167319"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=784297178"}]}]}'
-  recorded_at: Sun, 26 Sep 2021 22:45:51 GMT
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1240945126"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1525132053"}]}]}'
+  recorded_at: Sun, 26 Sep 2021 22:55:02 GMT
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=mapquest_api_key&location=%23%3CLocation:0x00007fab65c8d4e0%3E
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=mapquest_api_key&location=%23%3CLocation:0x00007fd2206ae1a0%3E
     body:
       encoding: US-ASCII
       string: ''
@@ -73,11 +73,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Sun, 26 Sep 2021 22:45:51 GMT
+      - Sun, 26 Sep 2021 22:55:02 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '7630'
+      - '7625'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -89,13 +89,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Sun, 26 Sep 2021 22:45:51 GMT
+      - Sun, 26 Sep 2021 22:55:02 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=A6F11AE71C0D9CC1E5C4BF607AF5992E; Path=/; HttpOnly
+      - JSESSIONID=5F83E14A12594FB8D5DC03AF4C4BEFD2; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -104,26 +104,26 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"#<Location:0x00007fab65c8d4e0>"},"locations":[{"street":"Avenida
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"#<Location:0x00007fd2206ae1a0>"},"locations":[{"street":"Avenida
         0 0A-75","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540001","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/67792","unknownInput":"","type":"s","latLng":{"lat":7.94739,"lng":-72.50457},"displayLatLng":{"lat":7.94739,"lng":-72.50457},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.94739,-72.50457|marker-sm-50318A-1&scalebar=true&zoom=15&rand=-1563799598"},{"street":"Carrera
-        0 0-13","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bucaramanga","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"680006","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/88133","unknownInput":"","type":"s","latLng":{"lat":7.10635,"lng":-73.1358},"displayLatLng":{"lat":7.10635,"lng":-73.1358},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.10635,-73.1358|marker-sm-50318A-2&scalebar=true&zoom=15&rand=-107422528"},{"street":"Avenida
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540001","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/67792","unknownInput":"","type":"s","latLng":{"lat":7.94739,"lng":-72.50457},"displayLatLng":{"lat":7.94739,"lng":-72.50457},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.94739,-72.50457|marker-sm-50318A-1&scalebar=true&zoom=15&rand=1724060087"},{"street":"Carrera
+        0 0-13","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bucaramanga","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"680006","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/88133","unknownInput":"","type":"s","latLng":{"lat":7.10635,"lng":-73.1358},"displayLatLng":{"lat":7.10635,"lng":-73.1358},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.10635,-73.1358|marker-sm-50318A-2&scalebar=true&zoom=15&rand=1104949316"},{"street":"Avenida
         0 0-74","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/98308","unknownInput":"","type":"s","latLng":{"lat":7.89875,"lng":-72.5005},"displayLatLng":{"lat":7.89875,"lng":-72.5005},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89875,-72.5005|marker-sm-50318A-3&scalebar=true&zoom=15&rand=2073805420"},{"street":"Avenida
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/98308","unknownInput":"","type":"s","latLng":{"lat":7.89875,"lng":-72.5005},"displayLatLng":{"lat":7.89875,"lng":-72.5005},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89875,-72.5005|marker-sm-50318A-3&scalebar=true&zoom=15&rand=-1079274170"},{"street":"Avenida
         0 0-80","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/130670","unknownInput":"","type":"s","latLng":{"lat":7.8989,"lng":-72.50064},"displayLatLng":{"lat":7.8989,"lng":-72.50064},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.8989,-72.50064|marker-sm-50318A-4&scalebar=true&zoom=15&rand=-1513962129"},{"street":"Avenida
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/130670","unknownInput":"","type":"s","latLng":{"lat":7.8989,"lng":-72.50064},"displayLatLng":{"lat":7.8989,"lng":-72.50064},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.8989,-72.50064|marker-sm-50318A-4&scalebar=true&zoom=15&rand=-700027825"},{"street":"Avenida
         0 0A-30","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540011","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/153584","unknownInput":"","type":"s","latLng":{"lat":7.89986,"lng":-72.52352},"displayLatLng":{"lat":7.89986,"lng":-72.52352},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89986,-72.52352|marker-sm-50318A-5&scalebar=true&zoom=15&rand=-1242085669"},{"street":"Calle
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540011","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/153584","unknownInput":"","type":"s","latLng":{"lat":7.89986,"lng":-72.52352},"displayLatLng":{"lat":7.89986,"lng":-72.52352},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89986,-72.52352|marker-sm-50318A-5&scalebar=true&zoom=15&rand=860073063"},{"street":"Calle
         0 0A-113","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/158581","unknownInput":"","type":"s","latLng":{"lat":7.89771,"lng":-72.50137},"displayLatLng":{"lat":7.89771,"lng":-72.50137},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89771,-72.50137|marker-sm-50318A-6&scalebar=true&zoom=15&rand=1668430388"},{"street":"Carrera
-        0 0-65","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bucaramanga","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"680006","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/178293","unknownInput":"","type":"s","latLng":{"lat":7.10644,"lng":-73.1357},"displayLatLng":{"lat":7.10644,"lng":-73.1357},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.10644,-73.1357|marker-sm-50318A-7&scalebar=true&zoom=15&rand=-1428803856"},{"street":"Avenida
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/158581","unknownInput":"","type":"s","latLng":{"lat":7.89771,"lng":-72.50137},"displayLatLng":{"lat":7.89771,"lng":-72.50137},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89771,-72.50137|marker-sm-50318A-6&scalebar=true&zoom=15&rand=279328763"},{"street":"Carrera
+        0 0-65","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bucaramanga","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"680006","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/178293","unknownInput":"","type":"s","latLng":{"lat":7.10644,"lng":-73.1357},"displayLatLng":{"lat":7.10644,"lng":-73.1357},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.10644,-73.1357|marker-sm-50318A-7&scalebar=true&zoom=15&rand=2132935968"},{"street":"Avenida
         0 0A-81","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540001","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/179603","unknownInput":"","type":"s","latLng":{"lat":7.94732,"lng":-72.50463},"displayLatLng":{"lat":7.94732,"lng":-72.50463},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.94732,-72.50463|marker-sm-50318A-8&scalebar=true&zoom=15&rand=-727953892"},{"street":"Avenida
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540001","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/179603","unknownInput":"","type":"s","latLng":{"lat":7.94732,"lng":-72.50463},"displayLatLng":{"lat":7.94732,"lng":-72.50463},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.94732,-72.50463|marker-sm-50318A-8&scalebar=true&zoom=15&rand=2064066641"},{"street":"Avenida
         0 0-22","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/181980","unknownInput":"","type":"s","latLng":{"lat":7.89769,"lng":-72.50033},"displayLatLng":{"lat":7.89769,"lng":-72.50033},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89769,-72.50033|marker-sm-50318A-9&scalebar=true&zoom=15&rand=-422467364"},{"street":"Calle
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540003","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/181980","unknownInput":"","type":"s","latLng":{"lat":7.89769,"lng":-72.50033},"displayLatLng":{"lat":7.89769,"lng":-72.50033},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89769,-72.50033|marker-sm-50318A-9&scalebar=true&zoom=15&rand=-1022756416"},{"street":"Calle
         0 0-40","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"C\u00FAcuta","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"Norte
-        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540011","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/186192","unknownInput":"","type":"s","latLng":{"lat":7.89914,"lng":-72.52329},"displayLatLng":{"lat":7.89914,"lng":-72.52329},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89914,-72.52329|marker-sm-50318A-10&scalebar=true&zoom=15&rand=-2102917562"}]}]}'
-  recorded_at: Sun, 26 Sep 2021 22:45:51 GMT
+        de Santander","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"540011","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"CO/PAD/p0/186192","unknownInput":"","type":"s","latLng":{"lat":7.89914,"lng":-72.52329},"displayLatLng":{"lat":7.89914,"lng":-72.52329},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=7.89914,-72.52329|marker-sm-50318A-10&scalebar=true&zoom=15&rand=-539250125"}]}]}'
+  recorded_at: Sun, 26 Sep 2021 22:55:02 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=open_weather_api_key&exclude=minutely,alerts&lat=7.94739&lon=-72.50457&units=imperial
@@ -145,7 +145,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 26 Sep 2021 22:45:51 GMT
+      - Sun, 26 Sep 2021 22:55:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -162,7 +162,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":7.9474,"lon":-72.5046,"timezone":"America/Bogota","timezone_offset":-18000,"current":{"dt":1632696351,"sunrise":1632652719,"sunset":1632696228,"temp":83.21,"feels_like":84.72,"pressure":1010,"humidity":53,"dew_point":64.31,"uvi":0,"clouds":64,"visibility":10000,"wind_speed":4.45,"wind_deg":148,"wind_gust":6.06,"weather":[{"id":803,"main":"Clouds","description":"broken
+      string: '{"lat":7.9474,"lon":-72.5046,"timezone":"America/Bogota","timezone_offset":-18000,"current":{"dt":1632696903,"sunrise":1632652719,"sunset":1632696228,"temp":83.21,"feels_like":84.72,"pressure":1010,"humidity":53,"dew_point":64.31,"uvi":0,"clouds":64,"visibility":10000,"wind_speed":4.45,"wind_deg":148,"wind_gust":6.06,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04n"}]},"hourly":[{"dt":1632693600,"temp":84.83,"feels_like":86.23,"pressure":1010,"humidity":50,"dew_point":64.13,"uvi":0.46,"clouds":62,"visibility":10000,"wind_speed":3.47,"wind_deg":103,"wind_gust":6.51,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"pop":0.23},{"dt":1632697200,"temp":83.21,"feels_like":84.72,"pressure":1010,"humidity":53,"dew_point":64.31,"uvi":0,"clouds":64,"visibility":10000,"wind_speed":4.45,"wind_deg":148,"wind_gust":6.06,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04n"}],"pop":0.27},{"dt":1632700800,"temp":82.67,"feels_like":84.42,"pressure":1010,"humidity":55,"dew_point":64.87,"uvi":0,"clouds":65,"visibility":10000,"wind_speed":4.52,"wind_deg":169,"wind_gust":7.07,"weather":[{"id":803,"main":"Clouds","description":"broken
@@ -220,5 +220,5 @@ http_interactions:
         rain","icon":"10d"}],"clouds":98,"pop":1,"rain":27.32,"uvi":0.39},{"dt":1633190400,"sunrise":1633171074,"sunset":1633214427,"moonrise":1633158840,"moonset":1633204920,"moon_phase":0.87,"temp":{"day":85.05,"min":71.8,"max":86.34,"night":72.39,"eve":82.02,"morn":71.8},"feels_like":{"day":90.3,"night":73.8,"eve":88.11,"morn":73.29},"pressure":1012,"humidity":63,"dew_point":69.28,"wind_speed":7,"wind_deg":25,"wind_gust":6.2,"weather":[{"id":501,"main":"Rain","description":"moderate
         rain","icon":"10d"}],"clouds":83,"pop":0.99,"rain":21.58,"uvi":1},{"dt":1633276800,"sunrise":1633257468,"sunset":1633300795,"moonrise":1633248420,"moonset":1633294080,"moon_phase":0.9,"temp":{"day":84.54,"min":70.93,"max":86.2,"night":73.13,"eve":82.22,"morn":71.53},"feels_like":{"day":89.65,"night":74.75,"eve":88.81,"morn":72.93},"pressure":1011,"humidity":64,"dew_point":69.19,"wind_speed":5.46,"wind_deg":17,"wind_gust":4.97,"weather":[{"id":501,"main":"Rain","description":"moderate
         rain","icon":"10d"}],"clouds":36,"pop":1,"rain":26.04,"uvi":1}]}'
-  recorded_at: Sun, 26 Sep 2021 22:45:52 GMT
+  recorded_at: Sun, 26 Sep 2021 22:55:03 GMT
 recorded_with: VCR 6.0.0
