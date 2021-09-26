@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe MapquestService do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     before :each do
       @location = 'denver,co'
     end
