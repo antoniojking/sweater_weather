@@ -1,8 +1,17 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    forecast = WeatherFacade.forecast_by_city_state(params[:location])
+    if params_included?
+      render(json: ErrorSerializer.weather_params_not_included, status: :bad_request)
+    else
+      forecast = WeatherFacade.forecast_by_city_state(params[:location])
+      render(json: ForecastSerializer.new(forecast))
+    end
+  end
 
-    render(json: ForecastSerializer.new(forecast))
+  private
+
+  def params_included?
+    !params[:location].present?
   end
 
   # def index

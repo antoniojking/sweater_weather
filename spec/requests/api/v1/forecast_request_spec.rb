@@ -86,8 +86,8 @@ RSpec.describe 'Forecast API' do
   end
 
   describe 'sad path', :vcr do
-    xit 'will not return forecast without location params' do
-      get '/api/v1/forecast/'
+    it 'will not return forecast without location params' do
+      get '/api/v1/forecast'
 
       expect(response.status).to eq(400)
 
