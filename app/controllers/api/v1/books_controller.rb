@@ -3,6 +3,8 @@ class Api::V1::BooksController < ApplicationController
     location = params[:location]
     quantity = params[:quantity]
 
+    forecast = WeatherFacade.forecast_by_city_state(location).current_weather
+
     conn = Faraday.new(url: 'http://openlibrary.org/')
 
     response = conn.get('search.json') do |req|
@@ -11,14 +13,7 @@ class Api::V1::BooksController < ApplicationController
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    total_books_found = json[:numFound]
-    books = json[:docs][0..4]
-
-    attributes = books.map do |book|
-      book[:title]
-      book[:isbn]
-      book[:publisher]
-    end
-    require "pry"; binding.pry
+    books = Books.new(location, forecast, json)
+    render(json: BooksSerializer.new(books))
   end
 end
