@@ -1,4 +1,4 @@
-class Api::V1::ErrorSerializer
+class ErrorSerializer
   def self.weather_params_not_included
     {
       message: 'Location params must be specified',

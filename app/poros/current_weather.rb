@@ -11,9 +11,9 @@ class CurrentWeather
               :icon
 
   def initialize(attributes)
-    @datetime    = Time.at(attributes[:dt]).strftime("%B %e, %Y at %I:%M %p")
-    @sunrise     = Time.at(attributes[:sunrise]).strftime("%B %e, %Y at %I:%M %p")
-    @sunset      = Time.at(attributes[:sunset]).strftime("%B %e, %Y at %I:%M %p")
+    @datetime    = Time.at(attributes[:dt]).strftime('%B %e, %Y at %I:%M %p')
+    @sunrise     = Time.at(attributes[:sunrise]).strftime('%B %e, %Y at %I:%M %p')
+    @sunset      = Time.at(attributes[:sunset]).strftime('%B %e, %Y at %I:%M %p')
     @temperature = attributes[:temp]
     @feels_like  = attributes[:feels_like]
     @humidity    = attributes[:humidity]

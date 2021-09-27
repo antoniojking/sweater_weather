@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Forecast API' do
   describe 'happy path', :vcr do
     it 'returns forecast when given location params (city,state)' do
-      get '/api/v1/forecast', params: {location: 'denver,co'}
+      get '/api/v1/forecast', params: { location: 'denver,co' }
 
       expect(response.status).to eq(200)
 
@@ -39,11 +39,11 @@ RSpec.describe 'Forecast API' do
       expect(current).to have_key(:feels_like)
       expect(current[:feels_like]).to be_a(Float)
       expect(current).to have_key(:humidity)
-      expect(current[:humidity]).to be_a(Integer)
+      expect(current[:humidity]).to be_a(Numeric)
       expect(current).to have_key(:uvi)
-      expect(current[:uvi]).to be_a(Float)
+      expect(current[:uvi]).to be_a(Numeric)
       expect(current).to have_key(:visibility)
-      expect(current[:visibility]).to be_a(Integer)
+      expect(current[:visibility]).to be_a(Numeric)
       expect(current).to have_key(:conditions)
       expect(current[:conditions]).to be_a(String)
       expect(current).to have_key(:icon)
@@ -97,8 +97,8 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    xit 'will not return forecast with blank location' do
-      get '/api/v1/forecast', params: { location: ''}
+    it 'will not return forecast with blank location' do
+      get '/api/v1/forecast', params: { location: '' }
 
       expect(response.status).to eq(400)
 
@@ -108,8 +108,8 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    xit 'will render an error message when location is invalid or does not exist' do
-      get '/api/v1/forecast', params: { location: 'dinver,co'}
+    it 'will render an error message when location is invalid or does not exist' do
+      get '/api/v1/forecast', params: { location: 'd'}
 
       expect(response.status).to eq(400)
 
