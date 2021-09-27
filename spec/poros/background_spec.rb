@@ -14,7 +14,7 @@ RSpec.describe Background do
 
     image = json[:results][0]
 
-    source       = 'https://unsplash.com'
+    source       = 'unsplash.com'
     description  = image[:description]
     image_url    = image[:urls][:raw]
     photographer = image[:user][:name]
@@ -25,10 +25,12 @@ RSpec.describe Background do
     expect(background).to be_a(Background)
     expect(background.id).to eq('null')
     expect(background.location).to eq(location)
-    expect(background.source).to eq(source)
     expect(background.description).to eq(description)
     expect(background.image_url).to eq(image_url)
-    expect(background.photographer).to eq(photographer)
-    expect(background.photographer_profile_url).to eq(profile_url)
+    expect(background.credit).to eq({
+      source: source,
+      photographer: photographer,
+      photographer_profile_url: profile_url
+    })
   end
 end

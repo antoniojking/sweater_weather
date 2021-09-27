@@ -20,21 +20,18 @@ RSpec.describe 'Background Api' do
 
       attributes = photo[:attributes]
       expect(attributes).to be_a(Hash)
-      expect(attributes.keys.size).to eq(1)
-      expect(attributes).to have_key(:image)
+      expect(attributes.keys.size).to eq(4)
+      expect(attributes).to have_key(:location)
+      expect(attributes[:location]).to be_a(String)
+      expect(attributes).to have_key(:description)
+      expect(attributes[:description]).to be_a(String)
+      expect(attributes).to have_key(:image_url)
+      expect(attributes[:image_url]).to be_a(String)
+      expect(attributes).to have_key(:credit)
 
-      image = attributes[:image]
-      expect(image).to be_a(Hash)
-      expect(image.keys.size).to eq(3)
-      expect(image).to have_key(:location)
-      expect(image[:location]).to be_a(String)
-      expect(image).to have_key(:image_url)
-      expect(image[:image_url]).to be_a(String)
-      expect(image).to have_key(:credit)
-
-      credit = image[:credit]
+      credit = attributes[:credit]
       expect(credit).to be_a(Hash)
-      expect(credit.keys.size).to be_a(3)
+      expect(credit.keys.size).to eq(3)
       expect(credit).to have_key(:source)
       expect(credit[:source]).to be_a(String)
       expect(credit).to have_key(:photographer)
