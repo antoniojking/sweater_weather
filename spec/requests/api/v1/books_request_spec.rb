@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Book Search Api' do
-  describe 'happy path', :vcr do
-    it 'returns books realted to location' do
+  describe 'happy path' do
+    it 'returns books realted to location', :vcr do
       get '/api/v1/book-search', params: { location: 'denver,co', quantity: 5 }
 
       expect(response.status).to eq(200)

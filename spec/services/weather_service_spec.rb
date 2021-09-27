@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe WeatherService do
-  describe 'class methods', :vcr do
+  describe 'class methods' do
     let(:location) { MapquestFacade.coordinates_by_city_state('denver,co') }
 
     it '::conn' do
       expect(WeatherService.conn).to be_a(Faraday::Connection)
     end
 
-    it '::forecast_by_coordinates' do
+    it '::forecast_by_coordinates', :vcr do
       expect(WeatherService.forecast_by_coordinates(location)).to be_a(Hash)
 
       expect(WeatherService.forecast_by_coordinates(location)).to have_key(:current)

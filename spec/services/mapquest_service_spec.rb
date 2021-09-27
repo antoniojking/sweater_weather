@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe MapquestService do
-  describe 'class methods', :vcr do
+  describe 'class methods' do
     let(:location) { 'denver,co' }
 
     it '::conn' do
       expect(MapquestService.conn).to be_a(Faraday::Connection)
     end
 
-    it '::coordinates_by_city_state' do
+    it '::coordinates_by_city_state', :vcr do
       expect(MapquestService.coordinates_by_city_state(location)).to be_a(Hash)
       expect(MapquestService.coordinates_by_city_state(location)).to have_key(:results)
       expect(MapquestService.coordinates_by_city_state(location)[:results]).to be_an(Array)

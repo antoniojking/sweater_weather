@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Forecast API' do
-  describe 'happy path', :vcr do
-    it 'returns forecast when given location params (city,state)' do
+  describe 'happy path' do
+    it 'returns forecast when given location params (city,state)', :vcr do
       get '/api/v1/forecast', params: { location: 'denver,co' }
 
       expect(response.status).to eq(200)
@@ -85,8 +85,8 @@ RSpec.describe 'Forecast API' do
     end
   end
 
-  describe 'sad path', :vcr do
-    it 'will not return forecast without location params' do
+  describe 'sad path' do
+    it 'will not return forecast without location params', :vcr do
       get '/api/v1/forecast'
 
       expect(response.status).to eq(400)
@@ -97,7 +97,7 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    it 'will not return forecast with blank location' do
+    it 'will not return forecast with blank location', :vcr do
       get '/api/v1/forecast', params: { location: '' }
 
       expect(response.status).to eq(400)
@@ -108,7 +108,7 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    xit 'will render an error message when location is invalid or does not exist' do
+    xit 'will render an error message when location is invalid or does not exist', :vcr do
       get '/api/v1/forecast', params: { location: 'adjkijfp' }
 
       expect(response.status).to eq(400)
