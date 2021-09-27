@@ -108,7 +108,7 @@ RSpec.describe 'Forecast API' do
       expect(error).to have_key(:status)
     end
 
-    it 'will render an error message when location is invalid or does not exist' do
+    it 'will return forecast even when location is invalid or does not exist' do
       get '/api/v1/forecast', params: { location: 'adjkijfp' }
 
       expect(response.status).to eq(200)
