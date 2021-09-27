@@ -18,7 +18,7 @@ RSpec.describe 'Book Search Api' do
       expect(data[:type]).to be_a(String)
       expect(data).to have_key(:attributes)
 
-      attributes = books[:attributes]
+      attributes = data[:attributes]
       expect(attributes).to be_a(Hash)
       expect(attributes.keys.size).to eq(4)
       expect(attributes).to have_key(:destination)
