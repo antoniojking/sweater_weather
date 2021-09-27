@@ -1,4 +1,4 @@
-class Api::V1::BooksSerializer
+class BooksSerializer
   include FastJsonapi::ObjectSerializer
   set_type :books
   set_id :id
