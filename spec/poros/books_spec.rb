@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Books do
   it 'exists', :vcr do
     location = 'denver,co'
+    quantity = 5
     forecast = WeatherFacade.forecast_by_city_state(location)
     current = forecast.current_weather
 
@@ -12,9 +13,9 @@ RSpec.describe Books do
     end
     json = JSON.parse(response.body, symbolize_names: true)
     total_books_found = json[:numFound]
-    results = json[:docs][0..4]
+    results = json[:docs].take(quantity)
 
-    books = Books.new(location, current, json)
+    books = Books.new(location, current, results, total_books_found)
 
     expect(books).to be_a(Books)
     expect(books.id).to eq('null')

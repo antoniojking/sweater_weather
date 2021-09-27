@@ -4,17 +4,17 @@ class Books
               :forecast,
               :total_books_found,
               :books
-              
-  def initialize(location, forecast, books)
+
+  def initialize(location, forecast, books, total)
     @id                = 'null'
     @destination       = location
     @forecast          = { summary: forecast.conditions, temperature: "#{forecast.temperature.round(0)} F"}
-    @total_books_found = books[:numFound]
+    @total_books_found = total
     @books             = books_hash(books)
   end
 
   def books_hash(books)
-    books[:docs][0..4].map do |book|
+    books.map do |book|
       {
         "isbn": book[:isbn],
         "title": book[:title],
