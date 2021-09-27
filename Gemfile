@@ -9,7 +9,8 @@ gem 'puma', '~> 3.11'
 # gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
-# gem 'figaro'
+gem 'figaro'
+gem 'fast_jsonapi'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -28,7 +29,8 @@ end
 group :test do
   gem 'simplecov'
   gem 'shoulda-matchers'
-  # gem 'webmock'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

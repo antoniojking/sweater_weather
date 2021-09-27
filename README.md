@@ -1,5 +1,10 @@
 # Sweater Weather
 
+- Outline learning goals
+- How to clone and setup application
+- Where to get an API key
+- Happy path endpoint use
+
 ## Project Description
 
 You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
@@ -15,10 +20,23 @@ Your team is working in a service-oriented architecture. The front-end will comm
 
 ## Ruby version
 `ruby 2.7.2`
-`rubygem 3.1.4`
 
 ## System dependencies
-`Rails 5.2.6`
+```
+bootsnap (>= 1.1.0)
+faraday
+listen (>= 3.0.5, < 3.2)
+pg (>= 0.18, < 2.0)
+pry
+puma (~> 3.11)
+rails (~> 5.2.6)
+rspec-rails
+rubocop-rails
+shoulda-matchers
+simplecov
+travis
+tzinfo-data
+```
 
 ## Configuration
 
