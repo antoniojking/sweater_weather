@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 27 Sep 2021 17:53:56 GMT
+      - Mon, 27 Sep 2021 17:58:55 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Content-Length:
-      - '1734'
+      Transfer-Encoding:
+      - chunked
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 27 Sep 2021 17:53:56 GMT
+      - Mon, 27 Sep 2021 17:58:55 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=2DE089AA164F14E9880F6CF267D85D20; Path=/; HttpOnly
+      - JSESSIONID=867011CF3EE0ACBFECC9BC4D74D9FC9D; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,12 +51,12 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1454983791"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-348385024"}]}]}'
-  recorded_at: Mon, 27 Sep 2021 17:53:56 GMT
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1443239388"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-1549840326"}]}]}'
+  recorded_at: Mon, 27 Sep 2021 17:58:55 GMT
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=mapquest_api_key&location=%23%3CLocation:0x00007fa0e2765ec8%3E
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=mapquest_api_key&location=%23%3CLocation:0x00007fbda12735d8%3E
     body:
       encoding: US-ASCII
       string: ''
@@ -73,11 +73,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 27 Sep 2021 17:53:56 GMT
+      - Mon, 27 Sep 2021 17:58:56 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '7446'
+      - '7444'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -89,13 +89,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 27 Sep 2021 17:53:56 GMT
+      - Mon, 27 Sep 2021 17:58:56 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=49C6723771B80ED52C954F5DAD03E594; Path=/; HttpOnly
+      - JSESSIONID=A143FA8D947FDEB528CFC80463E338E3; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -104,18 +104,18 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"#<Location:0x00007fa0e2765ec8>"},"locations":[{"street":"07075.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/2195","unknownInput":"","type":"s","latLng":{"lat":37.08343,"lng":37.37328},"displayLatLng":{"lat":37.08343,"lng":37.37328},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08343,37.37328|marker-sm-50318A-1&scalebar=true&zoom=15&rand=-833406207"},{"street":"08030.
-        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/417821","unknownInput":"","type":"s","latLng":{"lat":37.09755,"lng":37.42534},"displayLatLng":{"lat":37.09755,"lng":37.42534},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09755,37.42534|marker-sm-50318A-2&scalebar=true&zoom=15&rand=-705420710"},{"street":"07094.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/420787","unknownInput":"","type":"s","latLng":{"lat":37.08665,"lng":37.37211},"displayLatLng":{"lat":37.08665,"lng":37.37211},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08665,37.37211|marker-sm-50318A-3&scalebar=true&zoom=15&rand=-1383575062"},{"street":"07071.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/424391","unknownInput":"","type":"s","latLng":{"lat":37.08225,"lng":37.37388},"displayLatLng":{"lat":37.08225,"lng":37.37388},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08225,37.37388|marker-sm-50318A-4&scalebar=true&zoom=15&rand=-1624876154"},{"street":"06085.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/431921","unknownInput":"","type":"s","latLng":{"lat":37.09723,"lng":37.43348},"displayLatLng":{"lat":37.09723,"lng":37.43348},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09723,37.43348|marker-sm-50318A-5&scalebar=true&zoom=15&rand=-974610149"},{"street":"03050.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/439203","unknownInput":"","type":"s","latLng":{"lat":37.0829,"lng":37.41747},"displayLatLng":{"lat":37.0829,"lng":37.41747},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.0829,37.41747|marker-sm-50318A-6&scalebar=true&zoom=15&rand=2102495284"},{"street":"07101.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/441849","unknownInput":"","type":"s","latLng":{"lat":37.08613,"lng":37.37045},"displayLatLng":{"lat":37.08613,"lng":37.37045},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08613,37.37045|marker-sm-50318A-7&scalebar=true&zoom=15&rand=1652479663"},{"street":"02016.
-        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/444369","unknownInput":"","type":"s","latLng":{"lat":37.08725,"lng":37.42339},"displayLatLng":{"lat":37.08725,"lng":37.42339},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08725,37.42339|marker-sm-50318A-8&scalebar=true&zoom=15&rand=-1513449579"},{"street":"06045.
-        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/446597","unknownInput":"","type":"s","latLng":{"lat":37.09605,"lng":37.43248},"displayLatLng":{"lat":37.09605,"lng":37.43248},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09605,37.43248|marker-sm-50318A-9&scalebar=true&zoom=15&rand=1437805767"},{"street":"08014.
-        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/448301","unknownInput":"","type":"s","latLng":{"lat":37.09297,"lng":37.41975},"displayLatLng":{"lat":37.09297,"lng":37.41975},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09297,37.41975|marker-sm-50318A-10&scalebar=true&zoom=15&rand=-1771076675"}]}]}'
-  recorded_at: Mon, 27 Sep 2021 17:53:56 GMT
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"#<Location:0x00007fbda12735d8>"},"locations":[{"street":"07075.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/2195","unknownInput":"","type":"s","latLng":{"lat":37.08343,"lng":37.37328},"displayLatLng":{"lat":37.08343,"lng":37.37328},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08343,37.37328|marker-sm-50318A-1&scalebar=true&zoom=15&rand=-367844912"},{"street":"08030.
+        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/417821","unknownInput":"","type":"s","latLng":{"lat":37.09755,"lng":37.42534},"displayLatLng":{"lat":37.09755,"lng":37.42534},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09755,37.42534|marker-sm-50318A-2&scalebar=true&zoom=15&rand=-996228961"},{"street":"07094.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/420787","unknownInput":"","type":"s","latLng":{"lat":37.08665,"lng":37.37211},"displayLatLng":{"lat":37.08665,"lng":37.37211},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08665,37.37211|marker-sm-50318A-3&scalebar=true&zoom=15&rand=-486653467"},{"street":"07071.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/424391","unknownInput":"","type":"s","latLng":{"lat":37.08225,"lng":37.37388},"displayLatLng":{"lat":37.08225,"lng":37.37388},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08225,37.37388|marker-sm-50318A-4&scalebar=true&zoom=15&rand=-1866435733"},{"street":"06085.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/431921","unknownInput":"","type":"s","latLng":{"lat":37.09723,"lng":37.43348},"displayLatLng":{"lat":37.09723,"lng":37.43348},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09723,37.43348|marker-sm-50318A-5&scalebar=true&zoom=15&rand=-1647638108"},{"street":"03050.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/439203","unknownInput":"","type":"s","latLng":{"lat":37.0829,"lng":37.41747},"displayLatLng":{"lat":37.0829,"lng":37.41747},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.0829,37.41747|marker-sm-50318A-6&scalebar=true&zoom=15&rand=-328005936"},{"street":"07101.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27500","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/441849","unknownInput":"","type":"s","latLng":{"lat":37.08613,"lng":37.37045},"displayLatLng":{"lat":37.08613,"lng":37.37045},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08613,37.37045|marker-sm-50318A-7&scalebar=true&zoom=15&rand=-269319579"},{"street":"02016.
+        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/444369","unknownInput":"","type":"s","latLng":{"lat":37.08725,"lng":37.42339},"displayLatLng":{"lat":37.08725,"lng":37.42339},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.08725,37.42339|marker-sm-50318A-8&scalebar=true&zoom=15&rand=-493258470"},{"street":"06045.
+        Cadde 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/446597","unknownInput":"","type":"s","latLng":{"lat":37.09605,"lng":37.43248},"displayLatLng":{"lat":37.09605,"lng":37.43248},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09605,37.43248|marker-sm-50318A-9&scalebar=true&zoom=15&rand=1733253890"},{"street":"08014.
+        Sokak 8","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Gaziantep","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"TR","adminArea1Type":"Country","postalCode":"27580","geocodeQualityCode":"P1CCA","geocodeQuality":"POINT","dragPoint":false,"sideOfStreet":"N","linkId":"TR/PAD/p0/448301","unknownInput":"","type":"s","latLng":{"lat":37.09297,"lng":37.41975},"displayLatLng":{"lat":37.09297,"lng":37.41975},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=mapquest_api_key&type=map&size=225,160&locations=37.09297,37.41975|marker-sm-50318A-10&scalebar=true&zoom=15&rand=-855322480"}]}]}'
+  recorded_at: Mon, 27 Sep 2021 17:58:56 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=open_weather_api_key&exclude=minutely,alerts&lat=37.08343&lon=37.37328&units=imperial
@@ -137,7 +137,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 27 Sep 2021 17:53:57 GMT
+      - Mon, 27 Sep 2021 17:58:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -154,7 +154,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":37.0834,"lon":37.3733,"timezone":"Europe/Istanbul","timezone_offset":10800,"current":{"dt":1632765236,"sunrise":1632712941,"sunset":1632756036,"temp":69.26,"feels_like":67.21,"pressure":1009,"humidity":28,"dew_point":34.81,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":0,"wind_deg":0,"weather":[{"id":800,"main":"Clear","description":"clear
+      string: '{"lat":37.0834,"lon":37.3733,"timezone":"Europe/Istanbul","timezone_offset":10800,"current":{"dt":1632765536,"sunrise":1632712941,"sunset":1632756036,"temp":69.26,"feels_like":67.21,"pressure":1009,"humidity":28,"dew_point":34.81,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":0,"wind_deg":0,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01n"}]},"hourly":[{"dt":1632762000,"temp":69.73,"feels_like":67.62,"pressure":1009,"humidity":26,"dew_point":33.35,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":9.44,"wind_deg":284,"wind_gust":14.85,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01n"}],"pop":0},{"dt":1632765600,"temp":69.26,"feels_like":67.21,"pressure":1009,"humidity":28,"dew_point":34.81,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":8.97,"wind_deg":288,"wind_gust":11.99,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01n"}],"pop":0},{"dt":1632769200,"temp":69.1,"feels_like":66.97,"pressure":1009,"humidity":27,"dew_point":33.75,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":9.42,"wind_deg":291,"wind_gust":13.49,"weather":[{"id":800,"main":"Clear","description":"clear
@@ -212,5 +212,5 @@ http_interactions:
         sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":5.85},{"dt":1633251600,"sunrise":1633231642,"sunset":1633273890,"moonrise":1633218180,"moonset":1633269240,"moon_phase":0.89,"temp":{"day":81.77,"min":64.45,"max":84.96,"night":73.44,"eve":79.81,"morn":64.45},"feels_like":{"day":79.72,"night":71.89,"eve":79.81,"morn":62.24},"pressure":1014,"humidity":20,"dew_point":37.54,"wind_speed":8.93,"wind_deg":136,"wind_gust":13.11,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":6},{"dt":1633338000,"sunrise":1633318093,"sunset":1633360201,"moonrise":1633308660,"moonset":1633357560,"moon_phase":0.92,"temp":{"day":81.59,"min":66.49,"max":84.78,"night":71.4,"eve":79.07,"morn":66.49},"feels_like":{"day":79.65,"night":70.36,"eve":79.07,"morn":64.62},"pressure":1011,"humidity":21,"dew_point":38.62,"wind_speed":9.4,"wind_deg":253,"wind_gust":14.58,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":6}]}'
-  recorded_at: Mon, 27 Sep 2021 17:53:57 GMT
+  recorded_at: Mon, 27 Sep 2021 17:58:56 GMT
 recorded_with: VCR 6.0.0
