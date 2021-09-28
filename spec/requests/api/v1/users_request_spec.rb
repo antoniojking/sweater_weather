@@ -11,7 +11,7 @@ RSpec.describe 'Users Api' do
 
       headers = {'CONTENT_TYPE' => 'application/json'}
 
-      post '/api/v1/users', headers: headers, body: JSON.generate(user_params) #send a JSON payload in the body of the request
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params) #send a JSON payload in the body of the request
       created_user = User.last
 
       expect(response.status).to eq(201)
@@ -37,7 +37,6 @@ RSpec.describe 'Users Api' do
       expect(attributes[:email]).to be_a(String)
       expect(attributes).to have_key(:api_key)
       expect(attributes[:api_key]).to be_a(String)
-      end
     end
   end
 end
