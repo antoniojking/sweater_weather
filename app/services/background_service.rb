@@ -1,6 +1,6 @@
 class BackgroundService
   def self.conn
-    Faraday.new(url:'https://api.unsplash.com/')
+    Faraday.new(url: 'https://api.unsplash.com/')
   end
 
   def self.image_by_location(location)

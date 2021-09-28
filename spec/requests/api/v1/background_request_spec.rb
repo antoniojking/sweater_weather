@@ -40,4 +40,39 @@ RSpec.describe 'Background Api' do
       expect(credit[:photographer_profile_url]).to be_a(String)
     end
   end
+
+  describe 'sad path' do
+    it 'will not return background when params are missing', :vcr do
+      get '/api/v1/backgrounds'
+
+      expect(response.status).to eq(400)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json).to have_key(:status)
+    end
+
+    it 'will not return background when params are blank', :vcr do
+      get '/api/v1/backgrounds', params: { location: '' }
+
+      expect(response.status).to eq(400)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json).to have_key(:status)
+    end
+
+    it 'will not return background when params are invalid', :vcr do
+      get '/api/v1/backgrounds', params: { location: 'zdjkhrf' }
+
+      expect(response.status).to eq(400)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json).to have_key(:status)
+    end
+  end
 end
