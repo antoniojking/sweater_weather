@@ -6,7 +6,7 @@ ruby '2.7.2'
 gem 'rails', '~> 5.2.6'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
-# gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
