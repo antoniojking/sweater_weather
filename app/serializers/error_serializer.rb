@@ -12,4 +12,11 @@ class ErrorSerializer
       status: 'bad request'
     }
   end
+
+  def self.unprocessed_entity
+    {
+      message: 'Invalid json request',
+      status: '422: unprocessable entity'
+    }
+  end
 end

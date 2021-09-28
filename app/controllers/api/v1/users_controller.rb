@@ -5,9 +5,10 @@ class Api::V1::UsersController < ApplicationController
     new_user = User.new(user)
 
     if new_user.save
-      render(json: UserSerializer.new(new_user), status: :created)
+      new_user.api_keys.create!(token: SecureRandom.hex)
+      render(json: UserSerializer.new(new_user), status: 201)
     else
-      head(:unprocessable_entity)
+      render(json: ErrorSerializer.unprocessed_entity, status: 422)
     end
   end
 

@@ -9,15 +9,15 @@ RSpec.describe 'Users Api' do
         password_confirmation: 'password'
       }
 
-      headers = {'CONTENT_TYPE' => 'application/json'}
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
-      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params) #send a JSON payload in the body of the request
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params)
       created_user = User.last
 
       expect(response.status).to eq(201)
 
       expect(created_user.email).to eq(user_params[:email])
-      # expect(created_user.api_key).to eq(user_params[:api_key])
+      expect(created_user.api_keys.first).to eq(ApiKey.last)
 
       json = JSON.parse(response.body, symbolize_names: true)
 

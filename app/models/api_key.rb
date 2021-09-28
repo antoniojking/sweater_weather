@@ -1,5 +1,7 @@
 class ApiKey < ApplicationRecord
-  validates :token, presence: true, uniqueness: true
+  validates_presence_of :token
 
   belongs_to :user
+
+  # has_secure_token
 end
