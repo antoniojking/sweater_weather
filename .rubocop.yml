@@ -30,5 +30,8 @@ Style/SafeNavigation:
 Metrics/AbcSize:
   Enabled: false
 
+Rails/TimeZone:
+  Enabled: false
+
 Rails/UniqueValidationWithoutIndex:
   Enabled: false

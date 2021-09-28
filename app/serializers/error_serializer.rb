@@ -1,7 +1,14 @@
 class ErrorSerializer
-  def self.weather_params_not_included
+  def self.missing_params
     {
-      message: 'Location params must be specified',
+      message: 'Params must be specified',
+      status: 'bad request'
+    }
+  end
+
+  def self.invalid_params
+    {
+      message: 'Zero results matched your search',
       status: 'bad request'
     }
   end
