@@ -1,9 +1,11 @@
 class Api::V1::UsersController < ApplicationController
   def create
-    @user = User.new(user_params)
+    user = user_params
+    user[:email] = user[:email].downcase
+    new_user = User.new(user)
 
-    if @user.save
-      render :create
+    if new_user.save
+      render(json: UserSerializer.new(new_user), status: :created)
     else
       head(:unprocessable_entity)
     end
