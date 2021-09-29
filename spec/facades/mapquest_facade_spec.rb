@@ -10,7 +10,7 @@ RSpec.describe MapquestFacade do
       expect(denver).to be_a(Location)
     end
 
-    it '::directions_by_locations' do
+    it '::travel_time_by_locations' do
       destination = 'Pueblo,CO'
       roadtrip1 = MapquestFacade.travel_time_by_locations(location, destination)
 
