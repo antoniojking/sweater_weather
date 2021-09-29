@@ -20,7 +20,7 @@ class RoadTrip
   end
 
   def weather_hash(forecast, time)
-    if time == 0
+    if time.zero?
       { temperature: '', conditions: '' }
     else
       {
@@ -31,6 +31,6 @@ class RoadTrip
   end
 
   def impossible_route?(time)
-    time == 0 ? 'Impossible route' : travel_time_conversion(time)
+    time.zero? ? 'Impossible route' : travel_time_conversion(time)
   end
 end
