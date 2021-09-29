@@ -27,5 +27,17 @@ RSpec.describe MapquestService do
       expect(MapquestService.coordinates_by_city_state(location)[:results][0][:locations][0][:latLng]).to have_key(:lng)
       expect(MapquestService.coordinates_by_city_state(location)[:results][0][:locations][0][:latLng][:lng]).to be_a(Float)
     end
+
+    it '::directions_by_locations' do
+      origin = 'Denver,CO'
+      destination = 'Pueblo,CO'
+
+      expect(MapquestService.directions_by_locations(origin, destination)).to be_a(Hash)
+      expect(MapquestService.directions_by_locations(origin, destination)).to have_key(:route)
+      expect(MapquestService.directions_by_locations(origin, destination)[:route]).to be_an(Hash)
+
+      expect(MapquestService.directions_by_locations(origin, destination)[:route]).to have_key(:time)
+      expect(MapquestService.directions_by_locations(origin, destination)[:route][:time]).to be_an(Integer)
+    end
   end
 end
