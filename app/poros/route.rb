@@ -1,13 +1,7 @@
 class Route
-  attr_reader :time
+  attr_reader :travel_time
 
-  def initialize(time)
-    @time = time
+  def initialize(travel_time)
+    @travel_time = travel_time
   end
-
-  # def hrs_and_mins(time)
-  #   hours = time / 60
-  #   mins = time % 60
-  #   "#{hours} hours and #{mins} minutes"
-  # end
 end
