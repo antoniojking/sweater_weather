@@ -8,5 +8,12 @@ RSpec.describe WeatherFacade do
       forecast = WeatherFacade.forecast_by_city_state(location)
       expect(forecast).to be_a(Forecast)
     end
+
+    it '::forecast_nearest_hour' do
+      destination = 'Pueblo,CO'
+      time = 6262
+      forecast = WeatherFacade.forecast_nearest_hour(destination, time)
+      expect(forecast).to be_an(HourlyWeather)
+    end
   end
 end

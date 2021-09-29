@@ -40,4 +40,18 @@ class ErrorSerializer
       status: '422: unprocessable entity'
     }
   end
+
+  def self.api_key_invalid
+    {
+      message: 'The api key provided is incorrect',
+      status: '422: unprocessable entity'
+    }
+  end
+
+  def self.api_key_missing
+    {
+      message: 'An api key must be provided',
+      status: '422: unprocessable entity'
+    }
+  end
 end

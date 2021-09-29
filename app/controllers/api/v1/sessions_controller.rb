@@ -3,22 +3,18 @@ class Api::V1::SessionsController < ApplicationController
     @user = User.find_by(email: user_params[:email])
 
     if params_blank? || params[:user].blank?
-      render(json: ErrorSerializer.missing_params, status: 422)
+      render(json: ErrorSerializer.missing_params, status: :unprocessable_entity)
     elsif @user.nil? || incorrect_password?
-      render(json: ErrorSerializer.invalid_credentials, status: 422)
+      render(json: ErrorSerializer.invalid_credentials, status: :unprocessable_entity)
     elsif @user.authenticate(user_params[:password])
-      render(json: UserSerializer.new(@user), status: 200)
+      render(json: UserSerializer.new(@user), status: :ok)
     end
   end
 
   private
 
   def user_params
-    if params[:user].blank?
-      render(json: ErrorSerializer.unprocessable_entity, status: 422)
-    else
-      params.require(:user).permit(:email, :password)
-    end
+    params.require(:user).permit(:email, :password)
   end
 
   def incorrect_password?
