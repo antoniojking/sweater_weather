@@ -1,13 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe 'Sessions Api' do
-  describe 'happy path' do
-    it 'creates a user and generates a unique api key for that user' do
-      User.create!(email: 'whatever@example.com', password: '1234')
+  before :each do
+    user1 = User.create!(email: 'whatever@example.com', password: '1234')
+    user1.api_keys.create!(token: SecureRandom.hex)
+  end
 
+  describe 'happy path' do
+    it 'logs in and returns an api key for an existing user' do
       user_params = {
         email: 'whatever@example.com',
-        password: '1234',
+        password: '1234'
       }
 
       headers = { 'CONTENT_TYPE' => 'application/json' }
@@ -38,13 +41,11 @@ RSpec.describe 'Sessions Api' do
     end
   end
 
-  xdescribe 'sad paths' do
+  describe 'sad paths' do
     it 'incorrect username' do
-      User.create!(email: 'whatever@example.com', password: '1234')
-
       user_params = {
         email: 'what@example.com',
-        password: '1234',
+        password: '1234'
       }
 
       headers = { 'CONTENT_TYPE' => 'application/json' }
@@ -52,7 +53,7 @@ RSpec.describe 'Sessions Api' do
       post '/api/v1/sessions', headers: headers, params: JSON.generate(user: user_params)
       current_user = User.last
 
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(422)
 
       json = JSON.parse(response.body, symbolize_names: true)
 
@@ -62,11 +63,9 @@ RSpec.describe 'Sessions Api' do
     end
 
     it 'incorrect password' do
-      User.create!(email: 'whatever@example.com', password: '1234')
-
       user_params = {
         email: 'whatever@example.com',
-        password: '12345',
+        password: '12345'
       }
 
       headers = { 'CONTENT_TYPE' => 'application/json' }
@@ -74,7 +73,7 @@ RSpec.describe 'Sessions Api' do
       post '/api/v1/sessions', headers: headers, params: JSON.generate(user: user_params)
       current_user = User.last
 
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(422)
 
       json = JSON.parse(response.body, symbolize_names: true)
 
@@ -84,11 +83,9 @@ RSpec.describe 'Sessions Api' do
     end
 
     it 'blank username or password' do
-      User.create!(email: 'whatever@example.com', password: '1234')
-
       user_params = {
         email: '',
-        password: '1234',
+        password: '1234'
       }
 
       headers = { 'CONTENT_TYPE' => 'application/json' }
@@ -96,31 +93,12 @@ RSpec.describe 'Sessions Api' do
       post '/api/v1/sessions', headers: headers, params: JSON.generate(user: user_params)
       current_user = User.last
 
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(422)
 
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(json).to have_key(:message)
-      expect(json[:message]).to eq('Email and password cannot be blank')
-      expect(json).to have_key(:status)
-    end
-
-    it 'missing params' do
-      User.create!(email: 'whatever@example.com', password: '1234')
-
-      user_params = { }
-
-      headers = { 'CONTENT_TYPE' => 'application/json' }
-
-      post '/api/v1/sessions', headers: headers, params: JSON.generate(user: user_params)
-      current_user = User.last
-
-      expect(response.status).to eq(200)
-
-      json = JSON.parse(response.body, symbolize_names: true)
-
-      expect(json).to have_key(:message)
-      expect(json[:message]).to eq('Invalid json request')
+      expect(json[:message]).to eq('Params must be specified')
       expect(json).to have_key(:status)
     end
   end

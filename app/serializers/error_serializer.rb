@@ -33,4 +33,11 @@ class ErrorSerializer
       status: '422: unprocessable entity'
     }
   end
+
+  def self.invalid_credentials
+    {
+      message: 'Email/password are incorrect',
+      status: '422: unprocessable entity'
+    }
+  end
 end
