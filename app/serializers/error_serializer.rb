@@ -13,9 +13,23 @@ class ErrorSerializer
     }
   end
 
-  def self.unprocessed_entity
+  def self.unprocessable_entity
     {
       message: 'Invalid json request',
+      status: '422: unprocessable entity'
+    }
+  end
+
+  def self.email_exists
+    {
+      message: 'Email already exists',
+      status: '422: unprocessable entity'
+    }
+  end
+
+  def self.passwords_dont_match
+    {
+      message: 'Password inputs dont match',
       status: '422: unprocessable entity'
     }
   end

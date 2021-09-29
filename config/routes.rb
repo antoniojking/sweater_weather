@@ -7,5 +7,5 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
     end
   end
-  resources :api_keys, only: [:index, :create]
+  # resources :api_keys, only: [:index, :create]
 end

@@ -39,4 +39,88 @@ RSpec.describe 'Users Api' do
       expect(attributes[:api_key]).to be_a(String)
     end
   end
+
+  describe 'sad paths' do
+    it 'passwords dont match' do
+      user_params = {
+        email: 'whatever@example.com',
+        password: 'password',
+        password_confirmation: 'pasword'
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params)
+
+      expect(response.status).to eq(422)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json[:message]).to eq('Password inputs dont match')
+      expect(json).to have_key(:status)
+    end
+
+    it 'email already exists' do
+      User.create!(email: 'whatever@example.com', password: '1234', password_confirmation: '1234')
+
+      user_params = {
+        email: 'whatever@example.com',
+        password: 'password',
+        password_confirmation: 'password'
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params)
+
+      expect(response.status).to eq(422)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json[:message]).to eq('Email already exists')
+      expect(json).to have_key(:status)
+    end
+
+    it 'email cannot be blank' do
+      user_params = {
+        email: ' ',
+        password: 'password',
+        password_confirmation: 'password'
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params)
+
+      expect(response.status).to eq(422)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json[:message]).to eq('Invalid json request')
+      expect(json).to have_key(:status)
+    end
+
+    it 'password cannot be blank' do
+      user_params = {
+        email: ' ',
+        password: 'password',
+        password_confirmation: 'password'
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(user: user_params)
+
+      expect(response.status).to eq(422)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to have_key(:message)
+      expect(json[:message]).to eq('Invalid json request')
+      expect(json).to have_key(:status)
+    end
+  end
 end
