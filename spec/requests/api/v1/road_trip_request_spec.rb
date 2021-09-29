@@ -7,7 +7,7 @@ RSpec.describe 'Roadtrip Api' do
       user2.api_keys.create!(token: SecureRandom.hex)
     end
 
-    it 'returns time to destination and forecast at time of arrival' do
+    it 'returns time to destination and forecast at time of arrival', :vcr do
       roadtrip_params = {
         origin: "Denver,CO",
         destination: "Pueblo,CO",
@@ -33,7 +33,7 @@ RSpec.describe 'Roadtrip Api' do
 
       attributes = data[:attributes]
       expect(attributes).to be_a(Hash)
-      expect(attributes.keys.size).to eq(2)
+      expect(attributes.keys.size).to eq(4)
       expect(attributes).to have_key(:start_city)
       expect(attributes[:start_city]).to be_a(String)
       expect(attributes).to have_key(:end_city)
@@ -45,7 +45,7 @@ RSpec.describe 'Roadtrip Api' do
       weather = attributes[:weather_at_eta]
       expect(weather).to be_a(Hash)
       expect(weather).to have_key(:temperature)
-      expect(weather[:temperature]).to be_a(String)
+      expect(weather[:temperature]).to be_a(Float)
       expect(weather).to have_key(:conditions)
       expect(weather[:conditions]).to be_a(String)
       expect(weather).to have_key(:note)
