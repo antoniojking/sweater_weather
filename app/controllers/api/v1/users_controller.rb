@@ -6,13 +6,13 @@ class Api::V1::UsersController < ApplicationController
 
     if new_user.save
       new_user.api_keys.create!(token: SecureRandom.hex)
-      render(json: UserSerializer.new(new_user), status: 201)
+      render(json: UserSerializer.new(new_user), status: :created)
     elsif email_exists?
-      render(json: ErrorSerializer.email_exists, status: 422)
+      render(json: ErrorSerializer.email_exists, status: :unprocessable_entity)
     elsif passwords_dont_match?
-      render(json: ErrorSerializer.passwords_dont_match, status: 422)
+      render(json: ErrorSerializer.passwords_dont_match, status: :unprocessable_entity)
     else
-      render(json: ErrorSerializer.unprocessable_entity, status: 422)
+      render(json: ErrorSerializer.unprocessable_entity, status: :unprocessable_entity)
     end
   end
 

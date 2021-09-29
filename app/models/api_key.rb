@@ -1,5 +1,5 @@
 class ApiKey < ApplicationRecord
-  validates_presence_of :token
+  validates :token, presence: true
 
   belongs_to :user
 
