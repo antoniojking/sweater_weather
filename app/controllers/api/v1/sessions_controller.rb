@@ -14,11 +14,7 @@ class Api::V1::SessionsController < ApplicationController
   private
 
   def user_params
-    if params[:user].blank?
-      render(json: ErrorSerializer.unprocessable_entity, status: :unprocessable_entity)
-    else
-      params.require(:user).permit(:email, :password)
-    end
+    params.require(:user).permit(:email, :password)
   end
 
   def incorrect_password?

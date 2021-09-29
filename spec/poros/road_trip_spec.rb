@@ -16,8 +16,7 @@ RSpec.describe RoadTrip do
     expect(roadtrip1.travel_time).to eq(travel_time)
     expect(roadtrip1.weather_at_eta).to eq({
       temperature: forecast.temperature,
-      conditions: forecast.conditions,
-      note: 'impossible'
+      conditions: forecast.conditions
       })
   end
 end
