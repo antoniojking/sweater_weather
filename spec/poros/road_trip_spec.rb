@@ -6,8 +6,8 @@ RSpec.describe RoadTrip do
     destination = 'Pueblo,CO'
     time = MapquestFacade.travel_time_by_locations(origin, destination).travel_time
     travel_time = "#{time / 3600} hours and #{(time / 60) % 60} minutes"
-    roadtrip1 = RoadTrip.new(origin, destination)
     forecast = WeatherFacade.forecast_nearest_hour(destination, time)
+    roadtrip1 = RoadTrip.new(origin, destination, time, forecast)
 
     expect(roadtrip1).to be_a(RoadTrip)
     expect(roadtrip1.id).to eq('null')

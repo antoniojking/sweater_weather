@@ -8,6 +8,6 @@ RSpec.describe Route do
     roadtrip1 = MapquestFacade.travel_time_by_locations(origin, destination)
 
     expect(roadtrip1).to be_a(Route)
-    expect(roadtrip1.time).to eq(json[:route][:time])
+    expect(roadtrip1.travel_time).to eq(json[:route][:time])
   end
 end
