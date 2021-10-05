@@ -59,97 +59,21 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 28 Sep 2021 03:08:15 GMT
+      - Tue, 05 Oct 2021 21:26:24 GMT
       Age:
       - '0'
       X-Served-By:
-      - cache-dca12925-DCA, cache-den8271-DEN
+      - cache-dca12925-DCA, cache-den8255-DEN
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1632798495.024383,VS0,VE142
+      - S1633469185.656281,VS0,VE137
       Vary:
       - Accept-Encoding, Origin,Authorization,client-geo-region
     body:
       encoding: ASCII-8BIT
       string: '{"total":0,"total_pages":0,"results":[]}'
-  recorded_at: Tue, 28 Sep 2021 03:08:15 GMT
-- request:
-    method: get
-    uri: https://api.unsplash.com/search/photos?client_id=1BdpZXPR85aVoUiVnLe2KmNC5W4T5lUK0NLv_z4hJ5s&per_page=1&query=zdjkhrf
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.8.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '57'
-      Server:
-      - Cowboy
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Request-Method:
-      - "*"
-      Access-Control-Allow-Headers:
-      - "*"
-      Access-Control-Expose-Headers:
-      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
-      Cache-Control:
-      - no-cache, no-store, must-revalidate
-      Warning:
-      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
-      X-Total:
-      - '0'
-      X-Per-Page:
-      - '1'
-      Content-Type:
-      - application/json
-      Etag:
-      - W/"7814e74bfa62dcc505522924e3c8cf4b"
-      X-Ratelimit-Limit:
-      - '50'
-      X-Ratelimit-Remaining:
-      - '49'
-      X-Request-Id:
-      - 98a2498a-32df-412a-9206-5ae9a56d0ad1
-      X-Runtime:
-      - '0.088889'
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains
-      Via:
-      - 1.1 vegur, 1.1 varnish, 1.1 varnish
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Tue, 28 Sep 2021 03:08:15 GMT
-      Age:
-      - '0'
-      X-Served-By:
-      - cache-dca12925-DCA, cache-den8229-DEN
-      X-Cache:
-      - MISS, HIT
-      X-Cache-Hits:
-      - 0, 1
-      X-Timer:
-      - S1632798495.214436,VS0,VE1
-      Vary:
-      - Accept-Encoding, Origin,Authorization,client-geo-region
-    body:
-      encoding: ASCII-8BIT
-      string: '{"total":0,"total_pages":0,"results":[]}'
-  recorded_at: Tue, 28 Sep 2021 03:08:15 GMT
+  recorded_at: Tue, 05 Oct 2021 21:26:24 GMT
 recorded_with: VCR 6.0.0
